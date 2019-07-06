@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:ptr="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="100dp">
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+
+    <ImageView
+        android:src="@mipmap/ic_launcher"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        />
+
+
+    <TextView
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="八维资讯"/>
+    </LinearLayout>
+
+     <com.youth.banner.Banner
+         android:id="@+id/bn"
+         android:layout_width="match_parent"
+         android:layout_height="188dp">
+     </com.youth.banner.Banner>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/list_view"
+        ptr:ptrMode="both"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+</LinearLayout>

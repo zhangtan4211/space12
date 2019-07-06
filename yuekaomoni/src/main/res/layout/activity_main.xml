@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/draw"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+        <!--主界面-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/img"
+                android:src="@mipmap/ic_launcher"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+
+            <TextView
+                android:textSize="32sp"
+                android:text="八维资讯"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </android.support.design.widget.TabLayout>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="8" />
+
+
+    </LinearLayout>
+
+        <!--侧拉界面-->
+
+        <LinearLayout
+            android:layout_gravity="left"
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv"
+                android:scaleType="fitXY"
+                android:src="@mipmap/ic_launcher"
+                android:padding="10dp"
+                android:layout_width="150dp"
+                android:layout_height="150dp" />
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textSize="30sp"
+                android:text="用户反馈"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textSize="30sp"
+                android:text="系统设置"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textSize="30sp"
+                android:text="我要发布"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textSize="30sp"
+                android:text="注销"/>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.DrawerLayout>
